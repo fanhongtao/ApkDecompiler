@@ -7,8 +7,8 @@
 #       2. Put decompiled .xml files where their are.
 #       3. Replace number in .xml files.
 
-if [ $# -lt 2 ]; then
-    echo "Usage: $0  apk_name decomplie_dir"
+if [ $# -lt 1 ]; then
+    echo "Usage: $0  apk_name [decomplie_dir]"
     exit -1
 fi
 
@@ -21,7 +21,11 @@ APKTOOL=$script_path/apktool/apktool.sh
 apk_full_name=$1
 apk_name=${apk_full_name##*/}
 
-dest_dir=$2
+if [ $# -gt 1 ]; then
+    dest_dir=$2
+else
+    dest_dir=`echo $apk_name | awk '{print substr($0, 0, length($0) - 4)}'`
+fi
 
 # decode resources
 $APKTOOL d $apk_full_name $dest_dir
