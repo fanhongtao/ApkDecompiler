@@ -1,6 +1,6 @@
 This is README file for Java Decompiler.
 JD home page: http://java.decompiler.free.fr
-Copyright 2008-2010 Emmanuel Dupuy.
+Copyright 2008-2012 Emmanuel Dupuy.
 
 1. Installation.
 No installation and no setup are required.
@@ -39,7 +39,7 @@ JD-GUI, all its features remains operational, except the auto-update checking
 feature, of course.
 
 7. Disclaimer
-Copyright 2008-2010 Emmanuel Dupuy.
+Copyright 2008-2012 Emmanuel Dupuy.
 
 THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, 
 INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
