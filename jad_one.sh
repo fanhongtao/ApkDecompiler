@@ -1,7 +1,7 @@
 #!/bin/bash
 # History:
-#   2013-06-14 0.1
-#       Basic version
+#   2013-06-14 v0.1
+#   2013-07-18 v0.2
 
 function show_usage() {
     echo "Decompile one .class file into .java file, and edit the .java file."
@@ -34,7 +34,7 @@ EDITOR=notepad++
 
 full_name=`echo $str | sed 's/\./\//g'`
 echo $full_name
-$JAD $full_name
+$JAD -pi64 -o $full_name
 
 class_name=`echo $full_name | awk -F"/" '{print $NF}'`
 echo $class_name
